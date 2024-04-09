@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript">
+        $(document).ready(function(){
+            $("#navbar").load("navbar.html", function(){
+                $("<script>").attr("src", "statusUpdate.js").appendTo("body");
+            });
+        });
+        console.log("navbar loaded");
+    </script> -->
+    <script>
+        $(function(){
+            $('#navbar').load('navbar.html');
+        })
+    </script>
+</head>
+<body>
+
+    <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div class="mdl-layout__drawer" id="navbar_wrapper">
+        <span class="mdl-layout-title" id="navbar-title">Title</span>
+            <div id="navbar"></div>
+        </div>
+    </div>
+    <div class="container_info">
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <article class="infoMenu">
+                <h1 class="title-text">Test</h1>
+                <ul class="info-list-item">
+                    <button type="button" class="info-chip">
+                        <span class="mdl-chip__text">Update</span>
+                    </button>
+                    <button type="button" class="info-chip">
+                        <span class="mdl-chip__text">Version of Engine</span>
+                    </button>
+                    <button type="button" class="info-chip">
+                        <span class="mdl-chip__text">Language</span>
+                    </button>
+                </ul>   
+                
+                <p class="announcement-text">Description sample "Lorem ipsum dolor sit amet, consectetur adipiscing elit." </p>
+
+            </article> 
+            </div>
+        </main>
+    </div>  
+</body>
+<footer>
+</footer>
+</html>

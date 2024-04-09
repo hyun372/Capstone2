@@ -1,0 +1,145 @@
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.half-chip {
+  height: 16px;
+  line-height: 16px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 16px;
+  background-color: #dedede;
+  display: inline-block;
+  color: rgba(0, 0, 0, .87);
+  margin: 0;
+  font-size: 0;
+  white-space: nowrap;
+
+  width: 100px;
+  display: static;
+
+  &.left{
+    border-radius: 16px 0 0 16px;
+    background-color: rgba(24, 255, 24, .87);
+  }
+  &.right{
+    border-radius: 0 16px 16px 0;
+    background-color: rgba(255, 24, 24, .87);
+  }
+}
+.half-chip__text{
+  font-size: 10px;
+  text-align: middle;
+  color: whitesmoke;
+}
+
+.status-chip{
+  display: flex;
+  margin-left: -5px;
+}
+
+#navbar_wrapper{
+  background-color: rgb(32, 32, 32);
+  border-right: none;
+  text-align: left;
+  font-family: "SBAggroB", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+#navbar-title{
+  font-family: "SBAggroB", "Roboto", "Helvetica", "Arial", sans-serif;
+  margin-top: 8px;
+  font-size: 32px;
+}
+
+.navbar-link{
+  text-decoration: none;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+  line-height: 24px;
+  letter-spacing: 0;
+  opacity: .87;
+  vertical-align: middle;
+}
+.navbar-link:hover{
+  background-color: black;
+}
+
+body{
+  color: whitesmoke;
+  background-color: rgb(32, 32, 32);
+  font-family: "SBAggroB", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.info-list-item{
+  display: block;
+  padding: 2px;
+  margin: 0;
+}
+
+.container_info{
+  width: auto;
+  max-width: 660px;
+  margin: 10px auto;
+  font-family: "SBAggroB", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.info-chip{
+  height: 28px;
+  font-family: "SBAggroB", "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 28px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 16px;
+  background-color: #343a40;
+  display: inline-block;
+  color: #747a80;
+  margin: 2px 0;
+  font-size: 0;
+  white-space: nowrap;
+}
+.info-chip:focus{
+  outline: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .17), 0 3px 1px -2px rgba(0, 0, 0, .23), 0 1px 5px 0 rgba(0, 0, 0, .15);
+}
+.info-chip:active{
+  background-color: #aeaeae;
+}
+
+.title-text{
+  margin: 0;
+  margin-top: 70px;
+  font-size: 40px;
+  font-family: "SBAggroB", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.announcement-text{
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.material-icons{
+  color: whitesmoke;
+}
+
+@media(max-width: 500px){
+  .container_info{
+    text-align: center;
+  }
+  .info-list-item{
+    display: inline-block;
+    width: 200px;
+  }
+  .info-chip{
+    width: 180px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .navbar-link{
+    padding: 16px;
+  }
+}
